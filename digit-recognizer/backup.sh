@@ -8,5 +8,5 @@ cd /home/pi/git/qkj/digit-recognizer
 git add *.sh
 git add *.py
 git commit -m "done automatic : $date"
-git push origin master
+(echo "wkbscsd"; sleep 1; echo github55) | git push origin master
 cd -
