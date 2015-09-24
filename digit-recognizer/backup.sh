@@ -1,16 +1,16 @@
-#!/usr/bin/expect
-
-date=`date +%s`
+#!/bin/bash
 
 cp *.sh /home/pi/git/qkj/digit-recognizer/
 cp *.py /home/pi/git/qkj/digit-recognizer/
 cd /home/pi/git/qkj/digit-recognizer
 git add *.sh
 git add *.py
-git commit -m "done automatic : $date"
+git commit -m "done automatic"
 
 set timeout 10
-spawn git push origin master
+spawn 
+{git push origin master
 expect "*sername*"; send "wkbscsd\r"
 expect "*assword*"; send "github55\r"
+}
 cd -
