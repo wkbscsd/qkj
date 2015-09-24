@@ -7,8 +7,7 @@ git add *.sh
 git add *.py
 
 git commit -m "done automatic"
-echo "wkbscsd"
-echo "github55"
+cat info
 git push origin master
 
 
