@@ -2,12 +2,14 @@
 
 cp *.sh /home/pi/git/qkj/digit-recognizer/
 cp *.py /home/pi/git/qkj/digit-recognizer/
+
+
+cat info
 cd /home/pi/git/qkj/digit-recognizer
 git add *.sh
 git add *.py
 
 git commit -m "done automatic"
-cat info
 git push origin master
 
 
